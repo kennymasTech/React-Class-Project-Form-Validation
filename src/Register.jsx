@@ -84,7 +84,7 @@ const Register = () => {
                 value={pwd}
                 required
                 aria-invalid={validPwd ? "false" : "true"}
-                aria-describedby="uidnote"
+                aria-describedby="pwdnote"
                 onFocus={() => setPwdFocus(true)}
                 onBlur={() => setPwdFocus(false)}
             />
