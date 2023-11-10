@@ -87,6 +87,19 @@ const Register = () => {
             <FontAwesomeIcon  icon={faTimes} className={validPwd || !pwd ? "hide" : "invalid"}/>
         </label>
 
+        <input type="password" 
+                id="password" 
+                ref={userRef} 
+                autoComplete="off"
+                onChange={(e) => setUser(e.target.value)} 
+                value={user}
+                required
+                aria-invalid={validName ? "false" : "true" }
+                aria-describedby="uidnote"
+                onFocus={() => setUserFocus(true)}
+                onBlur={() => setUserFocus(false)}
+                />
+
                 Must Include UpperCase And LowerCase Letters.
                     a number and special character. <br />
                         Allowed Special Character:
