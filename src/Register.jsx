@@ -16,7 +16,7 @@ const Register = () => {
     const errRef = useRef();
 
     const [user, setUser] = useState("");
-    const [validName, setValidName] = useState(false)
+    const [validName, setValidName] = useState(false);
     const [userFocus, setUserFocus] = useState(false)
 
     const [pwd, setPwd] = useState('')
