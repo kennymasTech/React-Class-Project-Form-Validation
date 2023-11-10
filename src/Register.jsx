@@ -19,7 +19,7 @@ const Register = () => {
     const [validName, setValidName] = useState(false);
     const [userFocus, setUserFocus] = useState(false);
 
-    const [pwd, setPwd] = useState('')
+    const [pwd, setPwd] = useState('');
     const [validPwd, setValidPwd] = useState(false)
     const [pwdFocus, setPwdFocus] = useState(false)
 
