@@ -89,8 +89,6 @@ const Register = () => {
 
         <input type="password" 
                 id="password" 
-                ref={userRef} 
-                autoComplete="off"
                 onChange={(e) => setUser(e.target.value)} 
                 value={user}
                 required
