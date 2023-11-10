@@ -60,6 +60,23 @@ const Register = () => {
             <FontAwesomeIcon  icon={faCheck} className={validMatch && matchPwd ? "valid" : "hide"}/>
             <FontAwesomeIcon  icon={faTimes} className={validMatch || matchPwd ? "hide" : "invalid"}/>
         </label>
+
+        <input type="text" 
+                id="username" 
+                ref={userRef} 
+                autoComplete="off"
+                onChange={(e) => setUser(e.target.value)} 
+                value={user}
+                required
+                aria-invalid={validName ? "false" : "true" }
+                aria-describedby="uidnote"
+                onFocus={() => setUserFocus(true)}
+                onBlur={() => setUserFocus(false)}
+                />
+
+                <p id="uidnote" className={userFocus && user && !valid}>
+
+                </p>
     </form>
     </>
   )
