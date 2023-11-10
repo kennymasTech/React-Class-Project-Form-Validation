@@ -33,7 +33,7 @@ const Register = () => {
 
     useEffect(() => {
         userRef.current.focus();
-    }, [])
+    }, []);
 
     useEffect(() => {
         setValidName(USER_REGEX.test(user));
