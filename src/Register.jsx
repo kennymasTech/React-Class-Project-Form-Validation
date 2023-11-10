@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
-const USER_REGEX = /^[A-Z][A-Z0-9-_]{3,23}$/
+const USER_REGEX = /^[A-Z][A-Z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/
 const REGISTER_URL = "/register"
 
