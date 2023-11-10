@@ -76,9 +76,9 @@ const Register = () => {
 
                 <p id="uidnote" className={userFocus && user && !validName ? "instruction" : "offscreen"}>
                     <FontAwesomeIcon icon={faInfocircle} />
-                    3 to 23 characters. <br />
-                         Must beging with a <br />
-                         letter, number, underscore, hyphens Allowed
+                    3 to 23 Characters 
+                         Must beging <br /> with a 
+                         letter, number, <br /> underscore, hyphens.
                 </p>
 
         <label htmlFor="password">
@@ -89,18 +89,21 @@ const Register = () => {
 
         <input type="password" 
                 id="password" 
-                onChange={(e) => setUser(e.target.value)} 
+                onChange={(e) => setPwd(e.target.value)} 
                 value={pwd}
                 required
-                aria-invalid={validName ? "false" : "true" }
+                aria-invalid={validPwd ? "false" : "true" }
                 aria-describedby="uidnote"
-                onFocus={() => setUserFocus(true)}
-                onBlur={() => setUserFocus(false)}
+                onFocus={() => setPwdFocus(true)}
+                onBlur={() => setPwdFocus(false)}
                 />
 
-                Must Include UpperCase And LowerCase Letters.
+                    <FontAwesomeIcon icon={faInfocircle} />
+                    8 to 24 Characters 
+                    Must Include UpperCase And <br /> LowerCase Letters.
                     a number and special character. <br />
                         Allowed Special Character:
+                
     </form>
     </>
   )
