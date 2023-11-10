@@ -84,7 +84,7 @@ const Register = () => {
         <label htmlFor="password">
             password: 
             <FontAwesomeIcon  icon={faCheck} className={validPwd ? "valid" : "hide"}/>
-            <FontAwesomeIcon  icon={faTimes} className={validPwd || "hide" : "invalid"}/>
+            <FontAwesomeIcon  icon={faTimes} className={validPwd || !pwd ? "hide" : "invalid"}/>
         </label>
 
                 Must Include UpperCase And LowerCase Letters.
