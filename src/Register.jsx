@@ -40,7 +40,7 @@ const Register = () => {
     }, [user]);
 
     useEffect(() => {
-        setValidPwd(PWD_REGEX.test(pwd))
+        setValidPwd(PWD_REGEX.test(pwd));
     }, [pwd, matchPwd])
 
     useEffect(() => {
