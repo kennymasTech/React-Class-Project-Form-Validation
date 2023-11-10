@@ -66,7 +66,7 @@ const Register = () => {
                 onBlur={() => setUserFocus(false)}
             />
 
-            <p id="uidnote" className={userFocus && user && !validName ? "instruction" : "offscreen"}>
+            <p id="uidnote" className={userFocus && user && !validName ? "instructions" : "offscreen"}>
                 <FontAwesomeIcon icon={faInfoCircle}/>
                 3 to 23 characters <br /> 
                 Must begin with a letter, number, underscore, hyphens allowed
@@ -89,7 +89,7 @@ const Register = () => {
                 onBlur={() => setPwdFocus(false)}
             />
 
-            <p id="uidnote" className={pwdFocus && !validPwd ? "instruction" : "offscreen"}>
+            <p id="pwdnote" className={pwdFocus && !validPwd ? "instructions" : "offscreen"}>
                 <FontAwesomeIcon icon={faInfoCircle}/>
                 8 to 24 characters <br /> 
                 Must include Uppercase and LowerCase Letters, a number and a special character <br />
