@@ -90,7 +90,7 @@ const Register = () => {
         <input type="password" 
                 id="password" 
                 onChange={(e) => setUser(e.target.value)} 
-                value={user}
+                value={pwd}
                 required
                 aria-invalid={validName ? "false" : "true" }
                 aria-describedby="uidnote"
