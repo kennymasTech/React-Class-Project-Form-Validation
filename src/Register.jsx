@@ -89,7 +89,7 @@ const Register = () => {
                 onBlur={() => setPwdFocus(false)}
             />
 
-            <p>
+            <p id="uidnote" className={userFocus && user && !validName ? "instruction" : "offscreen"}>
                 <FontAwesomeIcon icon={faInfoCircle}/>
                 8 to 24 characters <br /> 
                 Must include Uppercase and LowerCase Letters, a number and a special character <br />
