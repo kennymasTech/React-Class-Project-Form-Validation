@@ -1,5 +1,5 @@
 
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useState, useRef } from "react";
 import {faCheck, faTimes, faInfoCircle} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -30,7 +30,7 @@ const Register = () => {
     const [errMsg, setErrMsg] = useState("")
     const [success, setSuccess] = useState(false)
   
-    
+
     useEffect(() => {
         userRef.current.focus()
     }, [])
