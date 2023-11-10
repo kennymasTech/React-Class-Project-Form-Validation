@@ -74,8 +74,8 @@ const Register = () => {
                 onBlur={() => setUserFocus(false)}
                 />
 
-                <p id="uidnote" className={userFocus && user && !valid}>
-
+                <p id="uidnote" className={userFocus && user && !validName ? "instruction" : "offscreen"}>
+                    
                 </p>
     </form>
     </>
