@@ -41,7 +41,7 @@ const Register = () => {
 
     useEffect(() => {
         setValidPwd(PWD_REGEX.test(pwd));
-    }, [pwd, matchPwd]);
+    }, [pwd, matchPwd])
 
     useEffect(() => {
         setErrMsg("")
