@@ -24,7 +24,7 @@ const Register = () => {
     const [pwdFocus, setPwdFocus] = useState(false);
 
     const [matchPwd, setMatchPwd] = useState("");
-    const [validMatch, setValidMatch] = useState(false);
+    const [validMatch, setValidMatch] = useState(false)
     const [matchFocus, setMatchFocus] = useState(false)
 
     const [errMsg, setErrMsg] = useState("")
