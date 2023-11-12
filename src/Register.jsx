@@ -37,7 +37,7 @@ const Register = () => {
 
     useEffect(() => {
         setValidName(USER_REGEX.test(user));
-    }, [user]);
+    }, [user])
 
     useEffect(() => {
         setValidPwd(PWD_REGEX.test(pwd))
