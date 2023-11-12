@@ -102,7 +102,7 @@ const Register = () => {
             </p>
         </form>
     </>
-  )
+  );
 }
 
 export default Register
