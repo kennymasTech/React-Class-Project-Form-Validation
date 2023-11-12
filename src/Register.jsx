@@ -36,7 +36,7 @@ const Register = () => {
     }, []);
 
     useEffect(() => {
-        setValidName(USER_REGEX.test(user))
+        setValidName(USER_REGEX.test(user));
     }, [user]);
 
     useEffect(() => {
