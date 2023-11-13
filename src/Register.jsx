@@ -115,7 +115,13 @@ const Register = () => {
                     required
                     aria-invalid={validMatch ? "false" : "true"}
                     aria-describedby="confirmnote"
+                    onFocus={() => setMatchFocus(true)}
+                    onBlur={() => setMatchFocus(false)}
              />
+
+             <p id="confirmnote" className={matchFocus && !invalidMatch}>
+
+             </p>
 
         </form>
         </section>
