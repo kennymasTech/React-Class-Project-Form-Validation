@@ -103,7 +103,8 @@ const Register = () => {
 
             <label htmlFor="confirm_pwd">
                 Confirm Password:
-                <FontAwesomeIcon icon={faCheck} className={validMatch && matchPwd ? "valid" : "hide"}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faCheck} className={validMatch && matchPwd ? "valid" : "hide"} />
+                <FontAwesomeIcon icon={faTimes} className={validMatch && matchPwd ? "hide" : "invalid"} />
             </label>
 
 
