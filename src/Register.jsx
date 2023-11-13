@@ -119,7 +119,7 @@ const Register = () => {
                     onBlur={() => setMatchFocus(false)}
              />
 
-             <p id="confirmnote" className={matchFocus && !invalidMatch}>
+             <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
 
              </p>
 
