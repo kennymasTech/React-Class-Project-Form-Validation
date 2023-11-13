@@ -53,16 +53,22 @@ const Register = () => {
         e.preventDefault()
         const v1 = USER_REGEX.test(user)
         const v2 = PWD_REGEX.test(pwd)
-        if(!v1 || !v2)
+        if(!v1 || !v2) {
             setErrMsg("Invalid Entry")
             return
+        }
             console.log(user, pwd);
             setSuccess(true);
+            // To Clear State And Control Input
+            setUser("")
+            setPwd("")
+            setMatchPwd("")
     }
     
 
   return (
     <>
+    {success ? (
         <section>
         <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
         <h1>Register</h1>
