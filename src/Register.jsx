@@ -55,6 +55,9 @@ const Register = () => {
         const v2 = PWD_REGEX.test(pwd)
         if(!v1 || !v2)
             setErrMsg("Invalid Entry")
+            return
+            console.log(user, pwd);
+            
     }
     
 
