@@ -155,6 +155,7 @@ const Register = () => {
             </span>
         </p>
         </section>
+    )}
     </>
   );
 };
