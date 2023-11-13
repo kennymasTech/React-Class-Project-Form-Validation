@@ -47,6 +47,11 @@ const Register = () => {
     useEffect(() => {
         setErrMsg("");
     }, [user, pwd, matchPwd]);
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+    }
     
 
   return (
