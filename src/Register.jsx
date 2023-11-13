@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
-const USER_REGEX = /^[A-Z][A-Z0-9-_]{3,23}$/;
+const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const REGISTER_URL = "/register";
 
@@ -53,9 +53,9 @@ const Register = () => {
         <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
         <form>
             <label htmlFor="username">
-                username:
-                <FontAwesomeIcon icon={faCheck} className = {validMatch && matchPwd ? "valid" : "hide"} />
-                <FontAwesomeIcon icon={faTimes} className = {validMatch || matchPwd ? "hide" : "invalid"} />
+                Username:
+                <FontAwesomeIcon icon={faCheck} className = {validName ? "valid" : "hide"} />
+                <FontAwesomeIcon icon={faTimes} className = {validName || !user ? "hide" : "invalid"} />
             </label>
             <input 
                 type="text" 
@@ -78,7 +78,7 @@ const Register = () => {
             </p>
 
             <label htmlFor="password">
-                password:
+                Password:
                 <FontAwesomeIcon icon={faCheck} className = {validPwd ? "valid" : "hide"} />
                 <FontAwesomeIcon icon={faTimes} className = {validPwd || !pwd ? "hide" : "invalid"} />
             </label>
@@ -100,6 +100,13 @@ const Register = () => {
                 Must include Uppercase and LowerCase Letters, a number and a special character <br />
                 Allowed special character: <span aria-label="exclamation mark">!</span> <span aria-label="at symbol">@</span> <span aria-label="hashtag">#</span> <span aria-label="dollar sign">$</span> <span aria-label="percent">%</span>
             </p>
+
+            <label htmlFor="confirm_pwd">
+                Confirm Password:
+                <FontAwesomeIcon icon={faCheck} className={validMatch && matchPwd ? "valid" : "hide"}></FontAwesomeIcon>
+            </label>
+
+
         </form>
     </>
   );
