@@ -120,6 +120,8 @@ const Register = () => {
              />
 
              <p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
+                <FontAwesomeIcon icon={faInfoCircle} />
+                Must Match The First Password Input Field.
 
              </p>
 
