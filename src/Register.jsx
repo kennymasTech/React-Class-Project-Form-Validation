@@ -113,7 +113,8 @@ const Register = () => {
                     onChange={(e) => setMatchPwd(e.target.value)}
                     value={matchPwd}
                     required
-                    aria-invalid={validMatch}
+                    aria-invalid={validMatch ? "false" : "true"}
+                    aria-describedby="confirmnote"
              />
 
         </form>
