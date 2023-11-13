@@ -108,6 +108,13 @@ const Register = () => {
                 <FontAwesomeIcon icon={faTimes} className={validMatch || !matchPwd ? "hide" : "invalid"} />
             </label>
 
+            <input type="password"
+                    id="confirm_pwd"
+                    onChange={(e) => setMatchPwd(e.target.value)}
+                    value={matchPwd}
+                    required
+                    aria-invalid={validMatch}
+             />
 
         </form>
         </section>
