@@ -51,6 +51,8 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        const v1 = USER_REGEX.test(user)
+        const v2 = PWD_REGEX.test(pwd)
     }
     
 
