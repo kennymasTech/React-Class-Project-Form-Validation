@@ -62,7 +62,7 @@ const Register = () => {
             // To Clear State And Control Input
             setUser("");
             setPwd("");
-            setMatchPwd("")
+            setMatchPwd("");
     };
     
 
