@@ -63,7 +63,7 @@ const Register = () => {
             setUser("")
             setPwd("")
             setMatchPwd("")
-    }
+    };
     
 
   return (
